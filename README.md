@@ -175,3 +175,13 @@ Tools I keep around but rarely use.
 - **[migrate-to-shoehorn](./skills/misc/migrate-to-shoehorn/SKILL.md)** — Migrate test files from `as` type assertions to @total-typescript/shoehorn.
 - **[scaffold-exercises](./skills/misc/scaffold-exercises/SKILL.md)** — Create exercise directory structures with sections, problems, solutions, and explainers.
 - **[setup-pre-commit](./skills/misc/setup-pre-commit/SKILL.md)** — Set up Husky pre-commit hooks with lint-staged, Prettier, type checking, and tests.
+
+### Condensed variants
+
+Every skill above has a token-optimized `-condensed` sibling (e.g. `triage-condensed/`) that preserves all normative rules at ~40–60% fewer bytes. They are not listed here to keep this reference readable.
+
+To add or re-sync a condensed variant after upstream changes, invoke **[condense-a-skill](./skills/misc/condense-a-skill/SKILL.md)** and then verify with:
+
+```bash
+./scripts/verify-skill-condensed.sh --all
+```
